@@ -2,19 +2,22 @@ import java.util.List;
 
 public class Forest {
     private List<MountainHare> hares;
-    static String color;
+
     private static String season;
     // объявите недостающие переменные и добавьте конструктор
 
 
-    public Forest(List<MountainHare> hares) {
+    public Forest(String season, List<MountainHare> hares) {
         this.hares = hares;
+
+        setSeason(season);
+
     }
 
     // добавьте метод setSeason(String newSeason)
     // в этом методе реализуйте логику смены цвета шубок зайцев-беляков
     static void setSeason(String newSeason){
-        Forest.season=newSeason;
+        season=newSeason;
         if (season.equals("зима")){
             MountainHare.color="белый";
 

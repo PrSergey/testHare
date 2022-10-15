@@ -10,8 +10,8 @@ public class Main {
 
         System.out.println("В лесу лето!");
         // создайте объект "летний лес с зайцами"
-        Forest forest= new Forest(hares);
-        forest.setSeason("лето");
+        Forest forest= new Forest("лето",hares);
+
         System.out.println("Список зайцев:");
         forest.printHares();
         // напечатайте список всех зайцев
